@@ -1,0 +1,13 @@
+<template>
+    <lightning-card  title="LWC Query Selector">
+        <div class="slds-p-around_small">
+        <h1> I am Query Selector </h1>
+        <template for:each={userNames} for:item="user">
+            <div class="name" key={user}>{user}</div>
+        </template>
+            <div class="child" lwc:dom="manual"> </div>
+        <lightning-button label="Fetch" onclick={fetchDetailsHandler}
+                class="slds-var-m-left_x-small">Fetch Details</lightning-button>
+        </div>
+    </lightning-card>
+</template>

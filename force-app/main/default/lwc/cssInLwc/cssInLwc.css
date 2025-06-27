@@ -1,0 +1,21 @@
+/* External Styles - 3 Types
+1. Element (p, h1, div, span)
+2. Classes (.className)
+3. Pseudo Classes (.className:hover)
+*/
+
+p{
+    color:green;
+    font-size: 20px;
+    border: 1px solid red;
+}
+
+.external{
+    color:pink;
+    font-size: 20px;
+}
+
+.external:hover{
+    color:blue;
+    font-size: 40px;
+}

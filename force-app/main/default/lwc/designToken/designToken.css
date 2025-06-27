@@ -1,0 +1,7 @@
+div{
+    color:var(--lwc-brandDark);
+    background-color:var(--lwc-colorBackgroundHighlight);
+    font: var(--lwc-fontWeightBold);
+    line-height: var(--lwc-lineHeightText);
+    padding: var(--lwc-spacingLarge);
+}
