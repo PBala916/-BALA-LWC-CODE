@@ -1,5 +1,5 @@
 import { LightningElement } from 'lwc';
-import SALESFORCEFLOWS_FILE from '@salesforce/contentAssetUrl/salesforceflowguidepdf'
+import TYPESCRIPT_FILE from '@salesforce/contentAssetUrl/typescripthandbookbetapdf'
 export default class ContentAssetFiles extends LightningElement {
-    file = SALESFORCEFLOWS_FILE
+    file = TYPESCRIPT_FILE
 }
