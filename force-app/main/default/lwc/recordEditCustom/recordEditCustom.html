@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Custom validation in lightning record edit form">
+        <!-- To handle the server error we use onerror -->
+        <lightning-record-edit-form
+        object-api-name={objectName}
+        onsubmit={handleSubmit}
+        onsuccess={successHandler}
+        onerror={handleError} > 
+        <lightning-input label="Name"
+        value={inputValue}
+        onkeyup={handleChange}
+        class="slds-m-bottom_x-small"></lightning-input>
+	<!-- Button type should be submit only this form will get to know submit button has been clicked -->
+        <lightning-button class="slds-m-top_small" type="submit" label="Create Account"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
