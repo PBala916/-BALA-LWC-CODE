@@ -1,20 +1,10 @@
 import { LightningElement } from 'lwc';
-import findAccounts from '@salesforce/apex/ApexController.findAccounts'
-export default class ApexImperative extends LightningElement {
-    searchKey=''
+import getAccountList from '@salesforce/apex/ApexController.getAccountList'
+export default class ApexImperativeWithParamsDemo extends LightningElement {
     accounts
-    timer
-    searchHandler(event){
-        window.clearTimeout(this.timer)
-        this.searchKey = event.target.value
-        this.timer = setTimeout(()=>{
-            this.callApex()
-        }, 1000)
-    }
-
-    callApex(){
-        findAccounts({searchKey:this.searchKey})
-        .then(result=>{
+    handleClick(){
+        getAccountList().then(result=>{
+            console.log(result)
             this.accounts = result
         }).catch(error=>{
             console.error(error)
