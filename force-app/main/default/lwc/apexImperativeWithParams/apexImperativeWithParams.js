@@ -1,6 +1,6 @@
 import { LightningElement } from 'lwc';
 import findAccounts from '@salesforce/apex/ApexController.findAccounts'
-export default class ApexImperativeWithParamsDemo extends LightningElement {
+export default class ApexImperativeWithParams extends LightningElement {
     searchKey=''
     accounts
     timer

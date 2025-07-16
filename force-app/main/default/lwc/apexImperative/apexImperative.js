@@ -1,6 +1,6 @@
 import { LightningElement } from 'lwc';
 import getAccountList from '@salesforce/apex/ApexController.getAccountList'
-export default class ApexImperativeWithParamsDemo extends LightningElement {
+export default class ApexImperative extends LightningElement {
     accounts
     handleClick(){
         getAccountList().then(result=>{
